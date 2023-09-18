@@ -1,27 +1,56 @@
-# React + TypeScript + Vite
+# Projeto de Portfólio em React e TypeScript
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é um projeto de portfólio pessoal desenvolvido utilizando as tecnologias React e TypeScript. Ele foi criado para mostrar minhas habilidades e projetos anteriores de forma organizada e atraente.
 
-Currently, two official plugins are available:
+## Visão Geral
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Objetivo
 
-## Expanding the ESLint configuration
+O objetivo principal deste projeto é:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- Apresentar meu trabalho anterior e habilidades em desenvolvimento web.
+- Fornecer uma plataforma para que as pessoas conheçam meu trabalho e entrem em contato comigo.
 
-- Configure the top-level `parserOptions` property like this:
+### Tecnologias Utilizadas
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+Neste projeto, foram utilizadas as seguintes tecnologias:
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- **React**: Uma biblioteca JavaScript popular para criação de interfaces de usuário.
+- **TypeScript**: Um superset do JavaScript que adiciona tipagem estática ao código.
+- **Tailwindcss**: Para estruturação e estilização do conteúdo.
+- **Bun**: Experimentando a nova runtime do javascript
+
+
+## Recursos
+
+### Páginas Principais
+
+1. **Página Inicial**: Uma breve introdução sobre mim e meu objetivo como desenvolvedor.
+2. **Portfólio**: Uma lista de projetos anteriores com descrições e links para os repositórios no GitHub ou sites em que foram implantados.
+3. **Contato**: Um formulário de contato para que os visitantes possam entrar em contato comigo diretamente.
+
+### Componentes Reutilizáveis
+
+- Criei diversos componentes reutilizáveis, como cabeçalho, rodapé e cartões de projeto, para manter o código limpo e organizado.
+
+## Como Executar o Projeto
+
+Se você deseja executar este projeto localmente, siga estas etapas:
+
+1. Certifique-se de ter o [bun](https://bun.sh) instalado em sua máquina.
+2. Clone este repositório para sua máquina local usando o comando `git clone`.
+3. Navegue até o diretório raiz do projeto e execute `bun install` para instalar as dependências.
+4. Execute `bun start` para iniciar o servidor de desenvolvimento.
+5. Abra o navegador e acesse `http://localhost:3000` para visualizar o projeto.
+
+## Contribuições
+
+Sinta-se à vontade para contribuir com este projeto. Se você encontrar bugs, problemas ou quiser adicionar novos recursos, abra uma "issue" neste repositório ou envie um "pull request".
+
+## Licença
+
+Este projeto é licenciado sob a Licença MIT - veja o arquivo [LICENSE](./LICENSE) para mais detalhes.
+
+## Contato
+
+Você pode entrar em contato comigo através do formulário de contato neste [site](https://exemplo.com/contato) ou pelo meu email: seuemail@example.com.
