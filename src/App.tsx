@@ -4,6 +4,7 @@ import { Moon, Sun } from 'lucide-react'
 import { useState } from 'react'
 import { GitHubLogoIcon, LinkedInLogoIcon, FileIcon } from '@radix-ui/react-icons'
 import { Icon } from '@iconify/react';
+import { Card } from '@radix-ui/themes';
 
 export function App() {
   const [isDark, setIsDark] = useState(false)
@@ -17,21 +18,21 @@ export function App() {
   return (
     <main className={`app ${isDark ? 'bg-neutral-900 text-white' : 'bg-white text-black'} min-h-screen`}>
     
-      <section className=' flex flex-row p-8 justify-evenly  border-transparent' >
+      <header className={`fixed top-0 left-0 right-0 flex flex-row p-8 justify-evenly border-transparent ${isDark ? 'blur-bg-invert' : 'blur-bg'}`}>
         <nav className='flex flex-row justify-evenly w-full ' >
           <h1 className='px-4'> Sobre mim </h1>
-          <h1 className='px-4'> Projetos  </h1>
+          <h1 className='px-4 ' > Projetos  </h1>
           <h1 className='px-4'> Contato  </h1>
           <DarkButton onClick={toggleDarkMode} >
             {isDark ? <Sun/> : <Moon />}
           </DarkButton>    
         </nav>  
-      </section>
+      </header>
 
     
-      <div className='flex flex-row mt-20'>
+      <div className='flex flex-row pt-72'>
         <div className=' flex flex-col ml-20 p-8 gap-4 pt-20 h-3/6 w-3/6 space-y-4 '>
-          <h1 className='text-5xl font-medium text-emerald-500'>Matheus Henrique</h1>
+          <h1 className=' text-7xl font-medium text-emerald-500'>Matheus Henrique</h1>
           <h3 className='text-3xl font-thin'>Desenvolvedor Fullstack  </h3>
           <span>Tenho 20 anos, desde muito jovem apaixonado por tecnologia, atualmente estudo diversas áreas do desenvolvimento de software como front e back-end</span>
             <div className='flex flex-row items-center justify-content w-3/6'>
@@ -61,11 +62,11 @@ export function App() {
         </div>
         </div>
 
-    <section className='pt-20'>
+    <section className=' pt-96'>
       <div className='flex flex-row justify-evenly'>
         <h1 className='text-3xl py-7'>Tecnologias que domino</h1>
       </div>
-      <div className={`flex flex-row justify-evenly items-center py-5 ${isDark ? 'invert-colors' : ''}`}>
+      <div className={`flex flex-row justify-evenly items-center pt-24 ${isDark ? 'invert-colors' : ''}`}>
         <div className='flex flex-col  items-center '>
           <img src='../src/assets/react.png' alt='html' className='w-20 h-20'/>
           <h1 className='py-5 font-semibold'>React.js</h1>
@@ -95,6 +96,23 @@ export function App() {
           <h1 className='py-5 font-semibold'>Fastify</h1>
         </div>
       </div>      
+    </section>
+
+    <section className=' pt-72 proj'>
+      <div className='flex flex-row justify-evenly'>
+        <h1 className='text-3xl py-7'>Projetos</h1>
+      </div>
+      <div className={`flex flex-row justify-evenly items-center pt-24 ${isDark ? 'invert-colors' : ''}`}>
+        
+          <Card className='w-80 h-80 pb-32'/>
+        
+          <Card className='w-80 h-80 pb-32'/>
+      </div>
+
+      <div className='pt-72'>
+
+      </div>
+
     </section>
       
 
