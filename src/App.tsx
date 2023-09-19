@@ -1,9 +1,9 @@
 
-import { Separator } from '@radix-ui/themes'
 import DarkButton from './components/Button'
 import { Moon, Sun } from 'lucide-react'
 import { useState } from 'react'
 import { GitHubLogoIcon, LinkedInLogoIcon, FileIcon } from '@radix-ui/react-icons'
+import { Icon } from '@iconify/react';
 
 export function App() {
   const [isDark, setIsDark] = useState(false)
@@ -11,6 +11,7 @@ export function App() {
   const toggleDarkMode = () => {
     setIsDark(!isDark)
   }
+
 
 
   return (
@@ -31,7 +32,7 @@ export function App() {
       <div className='flex flex-row mt-20'>
         <div className=' flex flex-col ml-20 p-8 gap-4 pt-20 h-3/6 w-3/6 space-y-4 '>
           <h1 className='text-5xl font-medium text-emerald-500'>Matheus Henrique</h1>
-          <h3 className='text-3xl font-thin'>Fullstack Developer</h3>
+          <h3 className='text-3xl font-thin'>Desenvolvedor Fullstack  </h3>
           <span>Tenho 20 anos, desde muito jovem apaixonado por tecnologia, atualmente estudo diversas áreas do desenvolvimento de software como front e back-end</span>
             <div className='flex flex-row items-center justify-content w-3/6'>
               <a href='https://github.com/matheus-hrm' target="_blank"  className=''>
@@ -50,11 +51,11 @@ export function App() {
         </div>
         
         <div className='flex float-right mx-20 px-8 pt-15 items-center'>
-          <div className='flex px-10 mx-10 items-center justify-content '>
+          <div className='flex px-10 mx-10 items-center justify-content float-right'>
             <img
               src='../src/assets/temp.jpg'
-              alt='Sua Foto'
-              className='rounded-full w-3/6 object-cover border-4 border-emerald-500 border-solid'
+              alt='Foto'
+              className='rounded-full w-80   object-cover border-4 border-emerald-500 border-solid'
             />
           </div>
         </div>
@@ -62,11 +63,38 @@ export function App() {
 
     <section className='pt-20'>
       <div className='flex flex-row justify-evenly'>
-        <h1 className='text-3xl'>Tecnologias que uso</h1>
+        <h1 className='text-3xl py-7'>Tecnologias que domino</h1>
       </div>
-
-      
-      
+      <div className={`flex flex-row justify-evenly items-center py-5 ${isDark ? 'invert-colors' : ''}`}>
+        <div className='flex flex-col  items-center '>
+          <img src='../src/assets/react.png' alt='html' className='w-20 h-20'/>
+          <h1 className='py-5 font-semibold'>React.js</h1>
+        </div>
+        <div className='flex flex-col py-5 items-center '>
+          <img src='../src/assets/python.png' alt='python' className='w-20 h-20'/>
+          <h1 className='py-5 font-semibold'>Python</h1>
+        </div>
+        <div className='flex flex-col py-5 items-center '>
+          <img src='../src/assets/typescript.png' alt='typescript' className='w-20 h-20'/>
+          <h1 className='py-5 font-semibold'>Typescript</h1>
+        </div>
+        <div className='flex flex-col py-5 items-center '>
+          <img src='../src/assets/node-js.png' alt='node-js' className='w-20 h-20'/>
+          <h1 className='py-5 font-semibold'>Node.js</h1>
+        </div>
+        <div className='flex flex-col py-5 items-center '>
+          <img src='../src/assets/c.png' alt='c' className='w-20 h-20'/>
+          <h1 className='py-5 font-semibold'>C</h1>
+        </div>
+        <div className='flex flex-col py-5 items-center '>
+          <img src='../src/assets/java.png' alt='java' className='w-20 h-20'/>
+          <h1 className='py-5 font-semibold'>Java</h1>
+        </div>
+        <div className='flex flex-col py-5 items-center '>
+          <Icon icon="simple-icons:fastify" className='w-20 h-20'/>
+          <h1 className='py-5 font-semibold'>Fastify</h1>
+        </div>
+      </div>      
     </section>
       
 

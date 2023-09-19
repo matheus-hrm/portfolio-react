@@ -32,5 +32,9 @@
   background-color: var(--gray-12);
 }
 
+.invert-colors img {
+  filter: invert(100%);
+}
+
 
 }
