@@ -2,9 +2,10 @@
 import DarkButton from './components/Button'
 import { Moon, Sun } from 'lucide-react'
 import { useState } from 'react'
-import { GitHubLogoIcon, LinkedInLogoIcon, FileIcon } from '@radix-ui/react-icons'
+import { GitHubLogoIcon, LinkedInLogoIcon } from '@radix-ui/react-icons'
 import { Icon } from '@iconify/react';
 import { Card } from '@radix-ui/themes';
+import ContactUs from './components/EmailForm';
 
 export function App() {
   const [isDark, setIsDark] = useState(false)
@@ -43,9 +44,9 @@ export function App() {
                 <LinkedInLogoIcon className=' w-8 h-8 space-y-8'/>
               </a>
               <a className='pl-14 '>
-                <label htmlFor="file" className='cursor-pointer flex flex-row border-5 border-zinc-950 border-solid  '>
-                  <FileIcon className='w-8 h-8'/>
-                  <h1 className='pl-3 pt-1 text-sm font-semibold'>Curriculum</h1>
+                <label htmlFor="file" className='cursor-pointer flex flex-row ' >
+                  <Icon icon="majesticons:document-line" className='w-9 h-9'/> 
+                  <span className='pl-3 pt-1  font-semibold'>Currículo</span>
                 </label>
               </a>
             </div>
@@ -54,7 +55,7 @@ export function App() {
         <div className='flex float-right mx-20 px-8 pt-15 items-center'>
           <div className='flex px-10 mx-10 items-center justify-content float-right'>
             <img
-              src='https://o.remove.bg/downloads/bdd8c021-1524-44cd-b766-77680d134c6a/2-cat-programmer_4x-397008480-removebg-preview.png'
+              src='https://github.com/matheus-hrm/portfolio-react/blob/main/src/assets/2-cat-programmer_4x-397008480-removebg-preview.png?raw=true'
               alt='Foto'
               className='rounded-full w-96 h-96 object-cover border-4 border-emerald-500 border-solid'
             />
@@ -114,6 +115,24 @@ export function App() {
       </div>
 
     </section>
+
+    <section className=' pt-56'>
+      <h1 className='text-3xl py-12 pl-56'>Contato</h1>
+      <footer className=' bg-emerald-600'>
+        
+        <div className='flex flex-row pl-48 p-8 pt-32 pb-72 '>
+          <a href='https://github.com/matheus-hrm' target="_blank"  className=''>
+            <GitHubLogoIcon className=' w-8 h-8 space-y-8'/>
+          </a>
+          <a href='https://www.linkedin.com/in/matheus-henrique-rodrigues-magalh%C3%A3es/' target="_blank" className='pl-14'>
+            <LinkedInLogoIcon className=' w-8 h-8 space-y-8'/>
+          </a>
+          
+        </div>
+        <ContactUs style={{}}/>
+      </footer>
+    </section>
+
       
 
       
