@@ -54,9 +54,9 @@ export function App() {
         <div className='flex float-right mx-20 px-8 pt-15 items-center'>
           <div className='flex px-10 mx-10 items-center justify-content float-right'>
             <img
-              src='../src/assets/temp.jpg'
+              src='https://o.remove.bg/downloads/bdd8c021-1524-44cd-b766-77680d134c6a/2-cat-programmer_4x-397008480-removebg-preview.png'
               alt='Foto'
-              className='rounded-full w-80   object-cover border-4 border-emerald-500 border-solid'
+              className='rounded-full w-96 h-96 object-cover border-4 border-emerald-500 border-solid'
             />
           </div>
         </div>
@@ -68,27 +68,27 @@ export function App() {
       </div>
       <div className={`flex flex-row justify-evenly items-center pt-24 ${isDark ? 'invert-colors' : ''}`}>
         <div className='flex flex-col  items-center '>
-          <img src='../src/assets/react.png' alt='html' className='w-20 h-20'/>
+        <Icon icon="mdi:react"  className='w-24 h-24'/>
           <h1 className='py-5 font-semibold'>React.js</h1>
         </div>
         <div className='flex flex-col py-5 items-center '>
-          <img src='../src/assets/python.png' alt='python' className='w-20 h-20'/>
+          <Icon icon="cib:python" className='w-20 h-20'/>
           <h1 className='py-5 font-semibold'>Python</h1>
         </div>
         <div className='flex flex-col py-5 items-center '>
-          <img src='../src/assets/typescript.png' alt='typescript' className='w-20 h-20'/>
+          <Icon icon='simple-icons:typescript' className='w-20 h-20'/>
           <h1 className='py-5 font-semibold'>Typescript</h1>
         </div>
         <div className='flex flex-col py-5 items-center '>
-          <img src='../src/assets/node-js.png' alt='node-js' className='w-20 h-20'/>
+          <Icon icon="mdi:nodejs" className='w-20 h-20'/>
           <h1 className='py-5 font-semibold'>Node.js</h1>
         </div>
         <div className='flex flex-col py-5 items-center '>
-          <img src='../src/assets/c.png' alt='c' className='w-20 h-20'/>
+          <Icon icon="devicon-plain:c" className='w-20 h-20'/>
           <h1 className='py-5 font-semibold'>C</h1>
         </div>
         <div className='flex flex-col py-5 items-center '>
-          <img src='../src/assets/java.png' alt='java' className='w-20 h-20'/>
+          <Icon icon="bxl:java" className='w-20 h-20'/>
           <h1 className='py-5 font-semibold'>Java</h1>
         </div>
         <div className='flex flex-col py-5 items-center '>
