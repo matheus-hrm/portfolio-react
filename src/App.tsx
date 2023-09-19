@@ -129,7 +129,7 @@ export function App() {
           </a>
           
         </div>
-        <ContactUs style={{}}/>
+        <ContactUs />
       </footer>
     </section>
 
