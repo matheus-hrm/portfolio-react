@@ -15,7 +15,7 @@ const ContactUs: React.FC = () => {
     message: '',
   });
 
-  const [isValidEmail, setIsValidEmail] = useState<boolean>(true);
+  const [,setIsValidEmail] = useState<boolean>(true);
   const form = useRef<HTMLFormElement | null>(null);
   const sendEmail = (e: React.FormEvent) => {
     e.preventDefault();
