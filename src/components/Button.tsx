@@ -11,7 +11,7 @@ function DarkButton({ onClick, children} : ButtonProps) {
     <Button 
     variant='outline' 
     radius='full' 
-    className='custom-button relative flex justify-center w-10  h-0' 
+    className='custom-button relative flex justify-center w-10 h-0  hover:rotate-[360deg] transition-all duration-700 ease-in-out' 
     onClick={onClick}
     >
       {children}

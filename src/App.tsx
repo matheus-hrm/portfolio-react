@@ -3,12 +3,14 @@ import DarkButton from './components/Button'
 import { Moon, Sun } from 'lucide-react'
 import { useState } from 'react'
 import { GitHubLogoIcon, LinkedInLogoIcon } from '@radix-ui/react-icons'
+
 import { Icon } from '@iconify/react';
 import { Card } from '@radix-ui/themes';
 import ContactUs from './components/EmailForm';
 
 export function App() {
   const [isDark, setIsDark] = useState(false)
+  const [isPopupOpen, setIsPopupOpen] = useState(false)
 
   const toggleDarkMode = () => {
     setIsDark(!isDark)
@@ -24,7 +26,7 @@ export function App() {
           <h1 className='px-4'> Sobre mim </h1>
           <h1 className='px-4 ' > Projetos  </h1>
           <h1 className='px-4'> Contato  </h1>
-          <DarkButton onClick={toggleDarkMode} >
+          <DarkButton onClick={toggleDarkMode}  >
             {isDark ? <Sun/> : <Moon />}
           </DarkButton>    
         </nav>  
@@ -118,18 +120,50 @@ export function App() {
 
     <section className=' pt-56'>
       <h1 className='text-3xl py-12 pl-56'>Contato</h1>
-      <footer className=' bg-emerald-600'>
+      <footer className=' flex flex-row justify-between bg-emerald-600'>
         
-        <div className='flex flex-row pl-48 p-8 pt-32 pb-72 '>
+        <div className='flex flex-row pl-48 pt-32 '>
           <a href='https://github.com/matheus-hrm' target="_blank"  className=''>
-            <GitHubLogoIcon className=' w-8 h-8 space-y-8'/>
+            <GitHubLogoIcon className=' w-16 h-16  '/>
           </a>
           <a href='https://www.linkedin.com/in/matheus-henrique-rodrigues-magalh%C3%A3es/' target="_blank" className='pl-14'>
-            <LinkedInLogoIcon className=' w-8 h-8 space-y-8'/>
+            <LinkedInLogoIcon className=' w-16 h-16 '/>
           </a>
+          <div>
+            <div className='pl-14 '>
+              <button>
+                <Icon 
+                  icon="akar-icons:whatsapp-fill" 
+                  className='w-16 h-16'
+                  onClick={() => setIsPopupOpen(!isPopupOpen)}
+                  />
+              </button>
+              {isPopupOpen && (
+                <div className="flex items-center justify-content opacity-100 inset-0 bg-black ">
+                  <div 
+                    className='w-384 absolute flex flex-col items-center ml-56 mt-20 p-8 shadow-lg transition-all duration-200 ease-in-out transform '>
+                    <img
+                    src = 'https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://wa.me/5564992602624'
+                    alt = 'qr code'
+                    className='max-w-full mx-auto'
+                    >
+                    </img>
+                    <button 
+                      onClick={() => setIsPopupOpen(!isPopupOpen)}
+                      className="bg-red-500 text-white ml-16 mt-4 px-4 py-2 rounded hover:bg-red-600 focus:outline-none transition-opacity duration-300 ease-in-out"
+                    >
+                      Fechar
+                    </button>
+                  </div>
+                </div>
+              )}
+            </div>
+          </div>
+          
           
         </div>
         <ContactUs />
+        
       </footer>
     </section>
 
