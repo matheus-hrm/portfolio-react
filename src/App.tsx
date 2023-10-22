@@ -4,7 +4,6 @@ import { Moon, Sun } from 'lucide-react'
 import { useState } from 'react'
 import { GitHubLogoIcon, LinkedInLogoIcon } from '@radix-ui/react-icons'
 import { Icon } from '@iconify/react';
-import { Swiper, SwiperSlide } from 'swiper/react';
 import ContactUs from './components/EmailForm';
 
 export function App() {
