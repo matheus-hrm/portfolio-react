@@ -54,7 +54,7 @@ export function App() {
             <img
               src='https://github.com/matheus-hrm/portfolio-react/blob/main/src/assets/2-cat-programmer_4x-397008480-removebg-preview.png?raw=true'
               alt='Foto'
-              className='rounded-full w-96 h-96 object-cover border-4 border-emerald-500 border-solid'
+              className='rounded-full w-80 h-80 object-cover border-4 sm:hidden border-emerald-500 border-solid'
             />
           </div>
         </div>
@@ -62,7 +62,7 @@ export function App() {
 
     <section className=' pt-96'>
       <div className='flex flex-row justify-evenly'>
-        <h1 className='text-3xl py-7'>Tecnologias que domino</h1>
+        <h1 className='text-3xl py-7'>Tecnologias estou estudando</h1>
       </div>
       <div className={`flex flex-row justify-evenly items-center pt-24 ${isDark ? 'invert-colors' : ''}`}>
         <div className='flex flex-col  items-center '>
@@ -89,10 +89,6 @@ export function App() {
           <Icon icon="bxl:java" className='w-20 h-20'/>
           <h1 className='py-5 font-semibold'>Java</h1>
         </div>
-        <div className='flex flex-col py-5 items-center '>
-          <Icon icon="simple-icons:fastify" className='w-20 h-20'/>
-          <h1 className='py-5 font-semibold'>Fastify</h1>
-        </div>
       </div>      
     </section>
 
@@ -107,6 +103,15 @@ export function App() {
           <img className='p-4'src="https://github.com/matheus-hrm/portfolio-react/blob/2829cc2716a4cc34a1431a183377b789b6842b7a/src/assets/fb.png?raw=true"></img>
           <div className='p-4 rounded-lg shadow-md border-gray-100 border'>
             <p className=' text-center'>Projeto final para a disciplina de Introdução a Programação que consiste na criação de um jogo clone do flappy bird em C utilizando a biblioteca Allegro</p>
+          </div>
+          </a>
+        </div>
+        <div className="container mx-auto px-4 p-4 w-2/6 border-2 border-emerald-600 rounded-xl ">
+          <a href='' target="_blank">
+          <h6 className='font-semibold p-6'>Projeto #2</h6>
+          <img className='p-4'src=""></img>
+          <div className='p-4 rounded-lg shadow-md border-gray-100 border'>
+            <p className=' text-center'>Descrição</p>
           </div>
           </a>
         </div>
