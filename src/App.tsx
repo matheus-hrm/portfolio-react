@@ -4,6 +4,7 @@ import { Moon, Sun } from 'lucide-react'
 import { useState } from 'react'
 import { GitHubLogoIcon, LinkedInLogoIcon } from '@radix-ui/react-icons'
 import { Icon } from '@iconify/react';
+import { Swiper, SwiperSlide } from 'swiper/react';
 import ContactUs from './components/EmailForm';
 
 export function App() {
@@ -14,22 +15,19 @@ export function App() {
     setIsDark(!isDark)
   }
 
-
-
   return (
     <main className={`app ${isDark ? 'bg-neutral-900 text-white' : 'bg-white text-black'} min-h-screen`}>
     
       <header className={`fixed top-0 left-0 right-0 flex flex-row p-8 justify-evenly border-transparent ${isDark ? 'blur-bg-invert' : 'blur-bg'}`}>
         <nav className='flex flex-row justify-evenly w-full ' >
-          <h1 className='px-4'><a href="#sobre"> Sobre mim </a></h1>
-          <h1 className='px-4 ' ><a href="#projetos"> Projetos </a></h1>
-          <h1 className='px-4'><a href="#contato"> Contato  </a></h1>
+          <h1 className='px-4'> <a href="#sobre">    Sobre mim </a></h1>
+          <h1 className='px-4 ' ><a href="#projetos"> Projetos  </a></h1>
+          <h1 className='px-4'> <a href="#contato">  Contato   </a></h1>
           <DarkButton onClick={toggleDarkMode}  >
             {isDark ? <Sun/> : <Moon />}
           </DarkButton>    
         </nav>  
       </header>
-
     
       <div className='flex flex-row pt-72' id="sobre">
         <div className=' flex flex-col ml-20 p-8 gap-4 pt-20 h-3/6 w-3/6 space-y-4' >
@@ -103,30 +101,15 @@ export function App() {
       <div className='flex flex-row justify-evenly'>
         <h1 className='text-3xl py-7'>Projetos</h1>
       </div>
-      <div className={`flex flex-row overflow-x-auto pt-24 ${isDark ? 'invert-colors' : ''}`}>
-        <div className="container mx-auto px-4 p-4 w-1/4 border-2 border-emerald-600 rounded-xl ">
-          <h6 className='font-semibold p-6'>Título do projeto</h6>
+      <div className={`flex flex-row overflow-x-auto pt-24`}>          
+        <div className="container mx-auto px-4 p-4 w-2/6 border-2 border-emerald-600 rounded-xl ">
+          <a href='https://github.com/matheus-hrm/Flappy-Bird' target="_blank">
+          <h6 className='font-semibold p-6'>Flappy Bird</h6>
+          <img className='p-4'src="src/assets/fb.png"></img>
           <div className='p-4 rounded-lg shadow-md border-gray-100 border'>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At id sequi similique vitae odit iusto officia non, praesentium vel natus itaque consequuntur quasi facilis dolorem. Ab dicta aspernatur totam optio!</p>
+            <p className=' text-center'>Projeto final para a disciplina de Introdução a Programação que consiste na criação de um jogo clone do flappy bird em C utilizando a biblioteca Allegro</p>
           </div>
-        </div>
-        <div className="container mx-auto px-4 p-4 w-1/4 border-2 border-emerald-600 rounded-xl ">
-          <h6 className='font-semibold p-6'>Título do projeto</h6>
-          <div className='p-4 rounded-lg shadow-md border-gray-100 border'>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At id sequi similique vitae odit iusto officia non, praesentium vel natus itaque consequuntur quasi facilis dolorem. Ab dicta aspernatur totam optio!</p>
-          </div>
-        </div>
-        <div className="container mx-auto px-4 p-4 w-1/4 border-2 border-emerald-600 rounded-xl ">
-          <h6 className='font-semibold p-6'>Título do projeto</h6>
-          <div className='p-4 rounded-lg shadow-md border-gray-100 border'>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At id sequi similique vitae odit iusto officia non, praesentium vel natus itaque consequuntur quasi facilis dolorem. Ab dicta aspernatur totam optio!</p>
-          </div>
-        </div>
-        <div className="container mx-auto px-4 p-4 w-1/4 border-2 border-emerald-600 rounded-xl ">
-          <h6 className='font-semibold p-6'>Título do projeto</h6>
-          <div className='p-4 rounded-lg shadow-md border-gray-100 border'>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At id sequi similique vitae odit iusto officia non, praesentium vel natus itaque consequuntur quasi facilis dolorem. Ab dicta aspernatur totam optio!</p>
-          </div>
+          </a>
         </div>
       </div>
 
