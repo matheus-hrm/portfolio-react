@@ -3,9 +3,7 @@ import DarkButton from './components/Button'
 import { Moon, Sun } from 'lucide-react'
 import { useState } from 'react'
 import { GitHubLogoIcon, LinkedInLogoIcon } from '@radix-ui/react-icons'
-
 import { Icon } from '@iconify/react';
-import { Card } from '@radix-ui/themes';
 import ContactUs from './components/EmailForm';
 
 export function App() {
@@ -23,9 +21,9 @@ export function App() {
     
       <header className={`fixed top-0 left-0 right-0 flex flex-row p-8 justify-evenly border-transparent ${isDark ? 'blur-bg-invert' : 'blur-bg'}`}>
         <nav className='flex flex-row justify-evenly w-full ' >
-          <h1 className='px-4'> Sobre mim </h1>
-          <h1 className='px-4 ' > Projetos  </h1>
-          <h1 className='px-4'> Contato  </h1>
+          <h1 className='px-4'><a href="#sobre"> Sobre mim </a></h1>
+          <h1 className='px-4 ' ><a href="#projetos"> Projetos </a></h1>
+          <h1 className='px-4'><a href="#contato"> Contato  </a></h1>
           <DarkButton onClick={toggleDarkMode}  >
             {isDark ? <Sun/> : <Moon />}
           </DarkButton>    
@@ -33,8 +31,8 @@ export function App() {
       </header>
 
     
-      <div className='flex flex-row pt-72'>
-        <div className=' flex flex-col ml-20 p-8 gap-4 pt-20 h-3/6 w-3/6 space-y-4 '>
+      <div className='flex flex-row pt-72' id="sobre">
+        <div className=' flex flex-col ml-20 p-8 gap-4 pt-20 h-3/6 w-3/6 space-y-4' >
           <h1 className=' text-7xl font-medium text-emerald-500'>Matheus Henrique</h1>
           <h3 className='text-3xl font-thin'>Desenvolvedor Fullstack  </h3>
           <span>Tenho 20 anos, desde muito jovem apaixonado por tecnologia, atualmente estudo diversas áreas do desenvolvimento de software como front e back-end</span>
@@ -45,7 +43,7 @@ export function App() {
               <a href='https://www.linkedin.com/in/matheus-henrique-rodrigues-magalh%C3%A3es/' target="_blank" className='pl-14'>
                 <LinkedInLogoIcon className=' w-8 h-8 space-y-8'/>
               </a>
-              <a className='pl-14 '>
+              <a className='pl-14 ' href='https://drive.google.com/file/d/1g8PHOLIPTxKGQLRFMJA4XrcGGXAVK6ue/view?usp=sharing' target="_blank">
                 <label htmlFor="file" className='cursor-pointer flex flex-row ' >
                   <Icon icon="majesticons:document-line" className='w-9 h-9'/> 
                   <span className='pl-3 pt-1  font-semibold'>Currículo</span>
@@ -101,15 +99,35 @@ export function App() {
       </div>      
     </section>
 
-    <section className=' pt-72 proj'>
+    <section className=' pt-72 proj' id='projetos'>
       <div className='flex flex-row justify-evenly'>
         <h1 className='text-3xl py-7'>Projetos</h1>
       </div>
-      <div className={`flex flex-row justify-evenly items-center pt-24 ${isDark ? 'invert-colors' : ''}`}>
-        
-          <Card className='w-80 h-80 pb-32'/>
-        
-          <Card className='w-80 h-80 pb-32'/>
+      <div className={`flex flex-row overflow-x-auto pt-24 ${isDark ? 'invert-colors' : ''}`}>
+        <div className="container mx-auto px-4 p-4 w-1/4 border-2 border-emerald-600 rounded-xl ">
+          <h6 className='font-semibold p-6'>Título do projeto</h6>
+          <div className='p-4 rounded-lg shadow-md border-gray-100 border'>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At id sequi similique vitae odit iusto officia non, praesentium vel natus itaque consequuntur quasi facilis dolorem. Ab dicta aspernatur totam optio!</p>
+          </div>
+        </div>
+        <div className="container mx-auto px-4 p-4 w-1/4 border-2 border-emerald-600 rounded-xl ">
+          <h6 className='font-semibold p-6'>Título do projeto</h6>
+          <div className='p-4 rounded-lg shadow-md border-gray-100 border'>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At id sequi similique vitae odit iusto officia non, praesentium vel natus itaque consequuntur quasi facilis dolorem. Ab dicta aspernatur totam optio!</p>
+          </div>
+        </div>
+        <div className="container mx-auto px-4 p-4 w-1/4 border-2 border-emerald-600 rounded-xl ">
+          <h6 className='font-semibold p-6'>Título do projeto</h6>
+          <div className='p-4 rounded-lg shadow-md border-gray-100 border'>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At id sequi similique vitae odit iusto officia non, praesentium vel natus itaque consequuntur quasi facilis dolorem. Ab dicta aspernatur totam optio!</p>
+          </div>
+        </div>
+        <div className="container mx-auto px-4 p-4 w-1/4 border-2 border-emerald-600 rounded-xl ">
+          <h6 className='font-semibold p-6'>Título do projeto</h6>
+          <div className='p-4 rounded-lg shadow-md border-gray-100 border'>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At id sequi similique vitae odit iusto officia non, praesentium vel natus itaque consequuntur quasi facilis dolorem. Ab dicta aspernatur totam optio!</p>
+          </div>
+        </div>
       </div>
 
       <div className='pt-72'>
@@ -118,7 +136,7 @@ export function App() {
 
     </section>
 
-    <section className=' pt-56'>
+    <section className=' pt-56' id="contato">
       <h1 className='text-3xl py-12 pl-56'>Contato</h1>
       <footer className=' flex flex-row justify-between bg-emerald-600'>
         
