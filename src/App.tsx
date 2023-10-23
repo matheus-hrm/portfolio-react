@@ -16,7 +16,6 @@ export function App() {
 
   return (
     <main className={`app ${isDark ? 'bg-neutral-900 text-white' : 'bg-white text-black'} min-h-screen`}>
-    
       <header className={`fixed top-0 left-0 right-0 flex flex-row p-8 justify-evenly border-transparent ${isDark ? 'blur-bg-invert' : 'blur-bg'}`}>
         <nav className='flex flex-row justify-evenly w-full ' >
           <h1 className='px-4'> <a href="#sobre">    Sobre mim </a></h1>
@@ -54,7 +53,7 @@ export function App() {
             <img
               src='https://github.com/matheus-hrm/portfolio-react/blob/main/src/assets/2-cat-programmer_4x-397008480-removebg-preview.png?raw=true'
               alt='Foto'
-              className='rounded-full w-80 h-80 object-cover border-4 sm:hidden border-emerald-500 border-solid'
+              className='rounded-full w-80 h-80 object-cover border-4 border-emerald-500 border-solid'
             />
           </div>
         </div>
@@ -107,8 +106,8 @@ export function App() {
           </a>
         </div>
         <div className="container mx-auto px-4 p-4 w-2/6 border-2 border-emerald-600 rounded-xl ">
-          <a href='' target="_blank">
-          <h6 className='font-semibold p-6'>Projeto #2</h6>
+          <a href='https://github.com/matheus-hrm/transcription.ai' target="_blank">
+          <h6 className='font-semibold p-6'>transcription.ai</h6>
           <img className='p-4'src=""></img>
           <div className='p-4 rounded-lg shadow-md border-gray-100 border'>
             <p className=' text-center'>Descrição</p>
@@ -116,9 +115,7 @@ export function App() {
           </a>
         </div>
       </div>
-
       <div className='pt-72'>
-
       </div>
 
     </section>
@@ -164,18 +161,11 @@ export function App() {
               )}
             </div>
           </div>
-          
-          
         </div>
         <ContactUs />
         
       </footer>
     </section>
-
-      
-
-      
-      
 
     </main>
   )
