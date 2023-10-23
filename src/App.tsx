@@ -108,7 +108,7 @@ export function App() {
         <div className="container mx-auto px-4 p-4 w-2/6 border-2 border-emerald-600 rounded-xl ">
           <a href='https://github.com/matheus-hrm/transcription.ai' target="_blank">
           <h6 className='font-semibold p-6'>transcription.ai</h6>
-          <img className='p-4'src=""></img>
+          <img className='p-4'src="https://github.com/matheus-hrm/portfolio-react/blob/main/src/assets/tcpt-ai.png?raw=true"></img>
           <div className='p-4 rounded-lg shadow-md border-gray-100 border'>
             <p className=' text-center'>Descrição</p>
           </div>
