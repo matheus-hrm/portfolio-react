@@ -51,9 +51,3 @@ Sinta-se à vontade para contribuir com este projeto. Se você encontrar bugs, p
 
 Este projeto é licenciado sob a Licença MIT - veja o arquivo [LICENSE](./LICENSE) para mais detalhes.
 
-## Contato
-
-Você pode entrar em contato comigo através do formulário de contato neste [site](https://exemplo.com/contato) ou pelo meu email: seuemail@example.com.
-# pp
-# pp
-# pp
