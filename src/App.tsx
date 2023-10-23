@@ -108,9 +108,9 @@ export function App() {
         <div className="container mx-auto px-4 p-4 w-2/6 border-2 border-emerald-600 rounded-xl ">
           <a href='https://github.com/matheus-hrm/transcription.ai' target="_blank">
           <h6 className='font-semibold p-6'>transcription.ai</h6>
-          <img className='p-4'src="https://github.com/matheus-hrm/portfolio-react/blob/main/src/assets/tcpt-ai.png?raw=true"></img>
+          <img className='px-4 py-2 w-full'src="https://github.com/matheus-hrm/portfolio-react/blob/main/src/assets/tcpt-ai.png?raw=true"></img>
           <div className='p-4 rounded-lg shadow-md border-gray-100 border'>
-            <p className=' text-center'>Descrição</p>
+            <p className=' text-center'>Projeto feio durante a NLW da Rocketseat utilizando React.js, Typescript e integração com API da OpenAI, que realiza transcrição de vídeos e gera prompts com base nela. </p>
           </div>
           </a>
         </div>
@@ -126,7 +126,7 @@ export function App() {
         
         <div className='flex flex-row pl-48 pt-32 '>
           <a href='https://github.com/matheus-hrm' target="_blank"  className=''>
-            <GitHubLogoIcon className=' w-16 h-16  '/>
+            <GitHubLogoIcon className=' w-16 h-16 '/>
           </a>
           <a href='https://www.linkedin.com/in/matheus-henrique-rodrigues-magalh%C3%A3es/' target="_blank" className='pl-14'>
             <LinkedInLogoIcon className=' w-16 h-16 '/>
