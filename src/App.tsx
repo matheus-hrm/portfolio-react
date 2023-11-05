@@ -110,7 +110,7 @@ export function App() {
           <h6 className='font-semibold p-6'>transcription.ai</h6>
           <img className='px-4 py-2 w-full'src="https://github.com/matheus-hrm/portfolio-react/blob/main/src/assets/tcpt-ai.png?raw=true"></img>
           <div className='p-4 rounded-lg shadow-md border-gray-100 border'>
-            <p className=' text-center'>Projeto feio durante a NLW da Rocketseat utilizando React.js, Typescript e integração com API da OpenAI, que realiza transcrição de vídeos e gera prompts com base nela. </p>
+            <p className=' text-center'>Projeto feito durante a NLW da Rocketseat utilizando React.js, Typescript e integração com API da OpenAI, que realiza transcrição de vídeos e gera prompts com base nela. </p>
           </div>
           </a>
         </div>
