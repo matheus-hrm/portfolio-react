@@ -61,7 +61,7 @@ export function App() {
 
     <section className=' pt-96'>
       <div className='flex flex-row justify-evenly'>
-        <h1 className='text-3xl py-7'>Tecnologias estou estudando</h1>
+        <h1 className='text-3xl py-7'>Tecnologias que estou estudando atualmente</h1>
       </div>
       <div className={`flex flex-row justify-evenly items-center pt-24 ${isDark ? 'invert-colors' : ''}`}>
         <div className='flex flex-col  items-center '>
@@ -114,6 +114,25 @@ export function App() {
           </div>
           </a>
         </div>
+        <div className="container mx-auto px-4 p-4 w-2/6 border-2 border-emerald-600 rounded-xl ">
+          <a href='https://github.com/matheus-hrm/chatting-app' target="_blank">
+          <h6 className='font-semibold p-6'>chatting</h6>
+          <img className='px-4 py-2 w-full'src=""></img>
+          <div className='p-4 rounded-lg shadow-md border-gray-100 border'>
+            <p className=' text-center'>Aplicação de chat em tempo-real com autenticação pelo firebase</p>
+          </div>
+          </a>
+        </div>
+        <div className="container mx-auto px-4 p-4 w-2/6 border-2 border-emerald-600 rounded-xl ">
+          <a href='https://github.com/matheus-hrm/manga_App' target="_blank">
+          <h6 className='font-semibold p-6'>manga reader</h6>
+          <img className='px-4 py-2 w-full'src=""></img>
+          <div className='p-4 rounded-lg shadow-md border-gray-100 border'>
+            <p className=' text-center'>Site para ler mangás em Next.js e TailwindCss</p>
+          </div>
+          </a>
+        </div>
+        
       </div>
       <div className='pt-72'>
       </div>
